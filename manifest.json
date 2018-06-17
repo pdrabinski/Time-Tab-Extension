@@ -1,0 +1,14 @@
+{
+  "name": "Time NewTab",
+  "version": "1.0",
+  "author": "Paul Drabinski",
+  "description": "Show time in new tab.",
+  "permissions":["activeTab"],
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "manifest_version":2
+}
