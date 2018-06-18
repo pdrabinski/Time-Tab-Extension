@@ -10,5 +10,14 @@
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "images/clock_32.png"
+    }
+  },
+  "icons": {
+    "32": "images/clock_32.png"
+  },
   "manifest_version":2
 }
