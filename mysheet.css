@@ -1,24 +1,126 @@
 h1 {
-text-decoration: none;
-font-family:'Oswald';
-list-style-type: none;
-margin: 0;
-text-align: center;
-vertical-align: center;
+    text-decoration: none;
+    font-family:'Oswald';
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    vertical-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family:'Oswald';
+    list-style-type: none;
+    margin: 10px;
+    text-align: center;
+    vertical-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color:white;
+}
+
+.popup ul {
+    padding:10px;
+    margin:0px;
+    text-align: center;
+}
+
+.query {
+    vertical-align: center;
+    text-align: center;
+}
+
+input {
+    background-color: black;
+    align-self:center;
+    color: white;
+    width: 160px;
 }
 
 #time {
-padding-top: 96px;
-font-size: 160px;
-color:white;
+    padding-top: 96px;
+    font-size: 160px;
+    color:white;
 }
 
 #date {
-font-size: 32px;
-color:gray
+    font-size: 32px;
+    color:gray
 }
-
 
 body {
-background-color: black;
+    background-color: black;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+body {
+    font-family: 'Source Sans Pro';
+    background: #29335C;
+    background-size: cover;
+}
+
+.game {
+    background-color: transparent;
+    width: 408px;
+    height: 408px;
+    margin: 50px auto;
+}
+
+.game-field {
+    width: 134px;
+    height: 134px;
+    display: block;
+    float: left;
+    color: #EAEAEA;
+    font-size: 6.3em;
+}
+
+.win {
+    color: #E4572E;
+    transition: 200ms;
+}
+
+#first, #second, #third {
+    border-bottom: 3px solid #FFFFFF;
+}
+
+#second {
+    border-left: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+}
+
+#fourth, #fifth, #sixth {
+    border-bottom: 3px solid #FFFFFF;
+}
+
+#fifth {
+    border-left: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+}
+
+#eight {
+    border-left: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+}
+
+.modal-footer {
+    padding: 10px 80px 10px 0px;
+    align-content: center;
+}
+.modal-footer button {
+    background-color: black;
+    color: white;
+    width: 40%;
+    font-size: 32px;
+    transition: 500ms;
+    align-content: center;
+}
+.modal-footer button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.signature {
+    padding-top: 10px;
+}
+
