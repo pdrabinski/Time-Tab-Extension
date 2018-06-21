@@ -16,13 +16,33 @@ a {
     vertical-align: center;
     padding: 20px;
     font-size: 24px;
-    color:white;
+    background-color:black;
+}
+
+.gamebutton {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+}
+
+.gamebutton a {
+    color:gray;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px; 
 }
 
 .popup ul {
     padding:10px;
     margin:0px;
     text-align: center;
+}
+
+.popup a {
+    color:white;
 }
 
 .query {
@@ -55,7 +75,6 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 body {
     font-family: 'Source Sans Pro';
-    background: #29335C;
     background-size: cover;
 }
 
@@ -104,7 +123,7 @@ body {
 }
 
 .modal-footer {
-    padding: 10px 80px 10px 0px;
+    padding: 10px 80px 10px 80px;
     align-content: center;
 }
 .modal-footer button {
@@ -118,9 +137,5 @@ body {
 .modal-footer button:hover {
     background-color: gray;
     color: white;
-}
-
-.signature {
-    padding-top: 10px;
 }
 

@@ -3,13 +3,6 @@ var d = new Date();
 let time = get_Time();
 let date = get_Date();
 
-let time_html = document.getElementById('time');
-let date_html = document.getElementById('date');
-
-time_html.innerHTML = time;
-date_html.innerHTML = date;
-
-
 function get_Time() {
     let hours = d.getHours();
     let minutes = d.getMinutes();
@@ -37,3 +30,14 @@ function get_Date() {
     let date = day + " " + month + " " + dom.toString() + ", " + year.toString();
     return date
 }
+
+$(document).ready(function() {
+    $("#time").html(time);
+    $("#date").html(date);
+
+    // let time_html = $("#time");
+    // let date_html = $('#date');
+
+    // time_html.innerHTML = time;
+    // date_html.innerHTML = date;
+});
