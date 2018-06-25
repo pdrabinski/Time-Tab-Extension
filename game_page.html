@@ -2,31 +2,37 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="mysheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="mysheet.css" type="text/css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="container">
-        <div class="modal-footer">
-            <button type="button" id="x" class="btn" data-dismiss="modal" onClick="setFig(this.id)"><span class="fa fa-times"><span></button>
-            <button type="button" id="o" class="btn" data-dismiss="modal" onClick="setFig(this.id)"><span class="fa fa-circle-o"><span></button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-footer">
+                    <button type="button" id="xbutton" class="btn"><span>X</span></button>
+                    <button type="button" id="obutton" class="btn"><span>O</span></button>
+                </div>
+            </div>
         </div>
-    
-        <div class="game">
-            <div id="first" onClick="icon(this.id)" class="game-field"></div>
-            <div id="second" onClick="icon(this.id)" class="game-field"></div>
-            <div id="third" onClick="icon(this.id)" class="game-field"></div>
-            <div id="fourth" onClick="icon(this.id)" class="game-field"></div>
-            <div id="fifth" onClick="icon(this.id)" class="game-field"></div>
-            <div id="sixth" onClick="icon(this.id)" class="game-field"></div>
-            <div id="seventh" onClick="icon(this.id)" class="game-field"></div>
-            <div id="eight" onClick="icon(this.id)" class="game-field"></div>
-            <div id="ninth" onClick="icon(this.id)" class="game-field"></div>
-        </div>
-        
-        </div>
-        <script src="game.js"> </script>
     </div>
+                
+    <div class="game">
+        <div id="first" class="game-field"></div>
+        <div id="second" class="game-field"></div>
+        <div id="third" class="game-field"></div>
+        <div id="fourth" class="game-field"></div>
+        <div id="fifth" class="game-field"></div>
+        <div id="sixth" class="game-field"></div>
+        <div id="seventh" class="game-field"></div>
+        <div id="eighth" class="game-field"></div>
+        <div id="ninth" class="game-field"></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game.js"> </script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
 </body>
 </html>
