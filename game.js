@@ -56,11 +56,9 @@ function preprocess_move(id) {
 function update_board(id) {
     if (game.currentPlayer == 'user') {
         $('#' + id).html(game.user);
-        //$('#' + id).removeAttr('onClick');
     }
     else if (game.currentPlayer == 'computer') {
         $('#' + id).html(game.computer);
-        //$('#' + id).removeAttr('onClick');
     }
     let status = gameStatus();
     game.moves++;
@@ -170,16 +168,10 @@ function gameStatus() {
     }
   }
 
-  function lockAll() {
-    //update, does not work
-    $('.game-field').removeAttr('Click');
-  }
-
   function show(x, y, z) {
     $(x).addClass('win');
     $(y).addClass('win');
     $(z).addClass('win');
-    //lockAll();
     setTimeout(reset, 2000);
   }
 
@@ -187,7 +179,6 @@ function gameStatus() {
     $('.game-field').html('');
     game.moves = 0;
     $('.win').removeClass('win');
-    console.log('user ',game.user)
     if (game.user === '<span>O</span>') {
       game.user = '<span>X</span>';
       game.computer = '<span>O</span>';
