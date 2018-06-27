@@ -3,7 +3,7 @@
   "version": "1.1",
   "author": "Paul Drabinski",
   "description": "Show time in new tab.",
-  "permissions":["activeTab","declarativeContent"],
+  "permissions":["declarativeContent"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
